@@ -1,28 +1,52 @@
-.clock{
-   text-align: center;
+.clock {
+   /* text-align: center;
    width: 100%;
-   height: 500px;
+   height: 100%;
+   background-color: blanchedalmond; */
+   width: 100%;
+   height: 100%;
+   max-width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.clock .text {
+   text-align: center;
+}
+
+.in{
+   width: 100%;
+   height: 100%;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
 }
 
 ul.countdown {
-    list-style: none;
-    margin: 200px; 
-    display: inline-block;
- }
- ul.countdown li {
-    display: inline-block;
- }
- ul.countdown li span {
-    font-size: 70px;
-    font-weight: 200;
-    line-height: 80px;
- }
- ul.countdown li.seperator {
-    font-size: 80px;
-    line-height: 70px;
-    vertical-align: top;
- }
-    ul.countdown li p {
-    color: #a7abb1;
-    font-size: 14px;
- }
+   list-style: none;
+   padding: 10%;
+   margin: 150px;
+   display: fixed;
+}
+
+ul.countdown li {
+   display: inline-block;
+}
+
+ul.countdown li span {
+   font-size: 60px;
+   font-weight: 200;
+   line-height: 80px;
+}
+
+ul.countdown li.seperator {
+   font-size: 70px;
+   line-height: 70px;
+   vertical-align: top;
+}
+
+ul.countdown li p {
+   color: #a7abb1;
+   font-size: 14px;
+}

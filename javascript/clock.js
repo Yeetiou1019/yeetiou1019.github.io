@@ -90,7 +90,7 @@ $(document).ready(function () {
             //     _GP = _hour * 8,
             //     _X = _GP * 2,
             //     _day = _X * 2;
-            _millisecond = 1/14.845,
+            _millisecond = 1/14.83,
                 _KF = _millisecond * 102,
                 _second = _KF * 128,
                 _minute = _second * 64,
@@ -163,15 +163,16 @@ $(document).ready(function () {
         var interval;
         var interval2;
         var status;
-        var test = new Date();
-        test = test.setHours(0, 0, 0, 0)
-
+        var test ;
+        
         function timeCount() {
+            
             if (status == "start") {
+                test= new Date();
+                test = test.setHours(0, 0, 0, 0)
                 current_date = currentDate(); // 取得固定的當前時間
                 difference = current_date - test; // 時間差異計算
-                //- original_date.getTime()
-                if (current_date.getHours() == 0 && current_date.getMinutes() == 0 && current_date.getSeconds() == 0) {
+                if (current_date.getHours() == 0 && current_date.getMinutes() == 0 && current_date.getSeconds() == 0  && current_date.getMilliseconds() < 100) {
                     zeroing();
                     original_date = currentDate();
                 }
@@ -210,8 +211,8 @@ $(document).ready(function () {
         }
         if (original_date == null) {
             original_date = currentDate();
-            interval = setInterval(countdown, 1);
-            interval2 = setInterval(timeCount, 1);
+            interval = setInterval(countdown, 50);
+            interval2 = setInterval(timeCount, 50);
             status = "start";
         } else {
             interval = setInterval(countdown, 1);
@@ -232,34 +233,29 @@ $(document).ready(function () {
             }
         }
 
-        // 重置事件
-        $('.reset').click(function () {
-            resetClick();
-            zeroing();
-        });
+        // // 重置事件
+        // $('.reset').click(function () {
+        //     resetClick();
+        //     zeroing();
+        // });
 
-        // 暫停事件
-        $('.pause').click(function () {
-            pauseClick();
-            $('.pause').attr('disabled', true);
-            $('.start').attr('disabled', false);
-        });
+        // // 暫停事件
+        // $('.pause').click(function () {
+        //     pauseClick();
+        //     $('.pause').attr('disabled', true);
+        //     $('.start').attr('disabled', false);
+        // });
 
-        // 開始/繼續事件
-        $('.start').click(function () {
-            startClick();
-            $('.start').attr('disabled', true);
-            $('.pause').attr('disabled', false);
-        });
+        // // 開始/繼續事件
+        // $('.start').click(function () {
+        //     startClick();
+        //     $('.start').attr('disabled', true);
+        //     $('.pause').attr('disabled', false);
+        // });
     };
 
     //
     $('.countdown').downCount();
-    $('.start').attr('disabled', true);
-    $('.start').hide();
-    $('.pause').attr('disabled', false);
-    $('.pause').hide();
-    $('.reset').hide();
     
 });
 
