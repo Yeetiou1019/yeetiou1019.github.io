@@ -90,19 +90,13 @@ $(document).ready(function () {
             //     _GP = _hour * 8,
             //     _X = _GP * 2,
             //     _day = _X * 2;
-            _millisecond = 1/14.83,
+            _millisecond = 1/19.8,
                 _KF = _millisecond * 102,
                 _second = _KF * 128,
                 _minute = _second * 64,
-                _hour = _minute * 64,
-                _GP = _hour * 8,
-                _X = _GP * 2,
-                _day = _X * 2;
+                _hour = _minute * 64 ,
             // 進位
-            days = Math.floor(difference / _day),
-                xs = Math.floor((difference % _day) / _X),
-                gps = Math.floor((difference % _X) / _GP),
-                hours = Math.floor((difference % _GP) / _hour),
+                hours = Math.floor(difference / _hour),
                 minutes = Math.floor((difference % _hour) / _minute),
                 seconds = Math.floor((difference % _minute) / _second),
                 kfs = Math.floor((difference % _second) / _KF),
@@ -110,8 +104,6 @@ $(document).ready(function () {
 
             // 補零
             //days = (String(days).length >= 2) ? days : '0' + days;
-            xs = (String(xs).length >= 2) ? xs : '0' + xs;
-            gps = (String(gps).length >= 2) ? gps : '0' + gps;
             hours = (String(hours).length >= 2) ? hours : '0' + hours;
             minutes = (String(minutes).length >= 2) ? minutes : '0' + minutes;
             seconds = (String(seconds).length >= 2) ? seconds : '0' + seconds;

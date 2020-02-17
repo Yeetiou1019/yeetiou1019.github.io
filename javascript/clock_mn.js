@@ -90,20 +90,20 @@ $(document).ready(function () {
             //     _GP = _hour * 8,
             //     _X = _GP * 2,
             //     _day = _X * 2;
-            _millisecond = 1/14.83,
+            _millisecond = 1 / 19.8,
                 _KF = _millisecond * 102,
                 _second = _KF * 128,
                 _minute = _second * 64,
-                _hour = _minute * 64,
-                _GP = _hour * 8,
-                _X = _GP * 2,
-                _day = _X * 2;
-            // 進位
-            days = Math.floor(difference / _day),
-                xs = Math.floor((difference % _day) / _X),
-                gps = Math.floor((difference % _X) / _GP),
-                hours = Math.floor((difference % _GP) / _hour),
-                minutes = Math.floor((difference % _hour) / _minute),
+                // _hour = _minute * 64,
+                // _GP = _hour * 8,
+                // _X = _GP * 2,
+                // _day = _X * 2;
+                // 進位
+                // days = Math.floor(difference / _day),
+                //     xs = Math.floor((difference % _day) / _X),
+                //     gps = Math.floor((difference % _X) / _GP),
+                //     hours = Math.floor((difference % _GP) / _hour),
+                minutes = Math.floor(difference / _minute),
                 seconds = Math.floor((difference % _minute) / _second),
                 kfs = Math.floor((difference % _second) / _KF),
                 milliseconds = Math.floor((difference % _KF) / _millisecond);
@@ -163,16 +163,16 @@ $(document).ready(function () {
         var interval;
         var interval2;
         var status;
-        var test ;
-        
+        var test;
+
         function timeCount() {
-            
+
             if (status == "start") {
-                test= new Date();
+                test = new Date();
                 test = test.setHours(0, 0, 0, 0)
                 current_date = currentDate(); // 取得固定的當前時間
                 difference = current_date - test; // 時間差異計算
-                if (current_date.getHours() == 0 && current_date.getMinutes() == 0 && current_date.getSeconds() == 0  && current_date.getMilliseconds() < 100) {
+                if (current_date.getHours() == 0 && current_date.getMinutes() == 0 && current_date.getSeconds() == 0 && current_date.getMilliseconds() < 100) {
                     zeroing();
                     original_date = currentDate();
                 }
@@ -256,6 +256,6 @@ $(document).ready(function () {
 
     //
     $('.countdown').downCount();
-    
+
 });
 

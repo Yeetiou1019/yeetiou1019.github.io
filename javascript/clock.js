@@ -90,7 +90,7 @@ $(document).ready(function () {
             //     _GP = _hour * 8,
             //     _X = _GP * 2,
             //     _day = _X * 2;
-            _millisecond = 1/14.83,
+            _millisecond = 1/19.8,
                 _KF = _millisecond * 102,
                 _second = _KF * 128,
                 _minute = _second * 64,
