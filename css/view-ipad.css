@@ -1,0 +1,49 @@
+.in {
+    height: 600px;
+    display: -webkit-flex;
+    display:         flex;
+    -webkit-align-items: center;
+            align-items: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    text-align: center;
+ }
+ 
+ ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+ justify-content: center;
+    padding: 0;
+ }
+ ul > li{
+    list-style: none;
+ }
+ 
+ table {
+    width: 50px;
+ }
+ 
+ table, th, td {
+    border-collapse: collapse;
+    border: 5px solid transparent;
+ }
+ 
+ .xs,.gps,.hours,.minutes,.seconds,.kfs,.milliseconds,.sep{
+    font-size:  50px;
+ }
+ .xs_ref,.gps_ref,.hours_ref,.minutes_ref,.seconds_ref,.kfs_ref,.milliseconds_ref{
+    font-size:  20px;
+    color: lightgray;
+ }
+ 
+ @font-face {
+    font-family: 'DIGITALDREAMFATNARROW';
+    src: url('DIGITALDREAMFATNARROW.ttf'),
+ }
+ 
+ body {
+    font-family: 'DIGITALDREAMFATNARROW';
+    font-style: normal;
+    font-weight: normal;
+ }
