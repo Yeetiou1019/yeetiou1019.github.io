@@ -21,7 +21,7 @@
  }
  
  table {
-    width: 50px;
+    width: 80px;
  }
  
  table, th, td {
@@ -38,12 +38,13 @@
  }
  
  @font-face {
-    font-family: 'DIGITALDREAMFATNARROW';
-    src: url('DIGITALDREAMFATNARROW.ttf'),
+    font-family: 'digital';
+    src: url('./digitaldreamfatnarrow.ttf');
+    
  }
  
  body {
-    font-family: 'DIGITALDREAMFATNARROW';
-    font-style: normal;
-    font-weight: normal;
+    font-family: 'digital';
+    /* font-style: normal;
+    font-weight: normal; */
  }
