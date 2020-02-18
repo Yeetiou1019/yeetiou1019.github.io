@@ -42,15 +42,15 @@
        color: rgba(199, 0, 0, 1);
     }
     .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds {
-       background-color:rgba(255, 0, 0, 0.17) ;
+       background-color:rgba(255, 0, 0, 0.12) ;
     }
     .sep{
-       background-color:rgba(255, 0, 0, 0.11) ;
+       background-color:rgba(255, 0, 0, 0.1) ;
     }
     .xs_ref, .gps_ref, .hours_ref, .minutes_ref, .seconds_ref, .kfs_ref, .milliseconds_ref {
        font-size: 20px;
        box-shadow: 0 0 50px rgba(141, 138, 138, 1); 
-       background-color:rgba(163, 163, 163, 0.15) ;
+       background-color:rgba(163, 163, 163, 0.12) ;
        color: lightgray;
     }
     @font-face {
