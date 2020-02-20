@@ -33,24 +33,18 @@
    .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds, .sep {
       font-size: 70px;
       opacity: 1;
-      box-shadow: 0 0 50px rgba(255, 0, 0, 0.5); 
       transition: opacity 0s;
       -webkit-transition: opacity 0s;
       -ms-transition: opacity 0s;
       -moz-transition: opacity 0s;
       -o-transition: opacity 0s;
       color: rgba(199, 0, 0, 1);
+      text-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5),0px 0px 15px rgba(255, 0, 0, 0.5);
    }
-   .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds {
-      background-color:rgba(255, 0, 0, 0.12) ;
-   }
-   .sep{
-      background-color:rgba(255, 0, 0, 0.1) ;
-   }
+   
    .xs_ref, .gps_ref, .hours_ref, .minutes_ref, .seconds_ref, .kfs_ref, .milliseconds_ref {
       font-size: 20px;
-      box-shadow: 0 0 50px rgba(141, 138, 138, 1); 
-      background-color:rgba(163, 163, 163, 0.12) ;
+      text-shadow: 0px 0px 15px rgba(141, 138, 138, 1),0px 0px 15px rgba(141, 138, 138, 1);
       color: lightgray;
    }
    @font-face {
