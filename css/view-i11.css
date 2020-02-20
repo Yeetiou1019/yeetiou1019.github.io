@@ -30,7 +30,7 @@
        /* border: 5px solid transparent; */
        background-color: transparent;
     }
-    .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds, .sep {
+   .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds, .sep {
       font-size: 70px;
       opacity: 1;
       transition: opacity 0s;
@@ -38,8 +38,8 @@
       -ms-transition: opacity 0s;
       -moz-transition: opacity 0s;
       -o-transition: opacity 0s;
-      color: rgba(199, 0, 0, 1);
-      text-shadow: 0px 0px 15px rgba(255, 0, 0, 0.5),0px 0px 15px rgba(255, 0, 0, 0.5);
+      color: rgba(255, 255, 255);
+      text-shadow: 0px 0px 15px rgba(0, 0, 0),0px 0px 15px rgb(251, 251, 251);
    }
    
    .xs_ref, .gps_ref, .hours_ref, .minutes_ref, .seconds_ref, .kfs_ref, .milliseconds_ref {
