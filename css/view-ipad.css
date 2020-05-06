@@ -1,6 +1,6 @@
 @media only screen and (min-device-width:  800px) and (max-device-width: 1024px) {
    .in {
-      height: 384px;
+      height: 50%;
       width: 100%;
       display: -webkit-flex;
       display: flex;
@@ -12,7 +12,7 @@
       background-color: transparent;
    }
    .in2 {
-      height: 384px;
+      height: 50%;
       width: 100%;
       display: -webkit-flex;
       display: flex;
@@ -160,9 +160,9 @@
    }
 }
 
-@media only screen and (min-device-width: 300px) and (max-device-width: 769px) {
+@media only screen and (min-device-width: 300px) and (max-device-width: 768px) {
    .in {
-      height: 512px;
+      height: 50%;
       width: 100%;
       display: -webkit-flex;
       display: flex;
@@ -174,7 +174,7 @@
       background-color: #FFFFFF;
    }
    .in2 {
-      height: 512px;
+      height: 50%;
       width: 100%;
       display: -webkit-flex;
       display: flex;
