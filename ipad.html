@@ -8,13 +8,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/view-ipad.css">
     <script src="./javascript/jquery-3.4.1.min.js"></script>
-    <script type="text/javascript" src="./javascript/clock_hr.js"></script>
+    <script type="text/javascript" src="./javascript/clock.js"></script>
 </head>
 
 <body>
     <div class="in">
         <div class="countdown">
             <ul>
+                <li>
+                    <table class="xTable">
+                        <tr>
+                            <td><span class="xs">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="xs_ref">X</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="separate">
+                        <tr>
+                            <td><span class="sep">:</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="gpTable">
+                        <tr>
+                            <td><span class="gps">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="gps_ref">GP</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="separate">
+                        <tr>
+                            <td><span class="sep">:</span></td>
+                        </tr>
+                    </table>
+                </li>
                 <li>
                     <table class="hTable">
                         <tr>
@@ -65,7 +103,107 @@
                         </tr>
                     </table>
                 </li>
+                <li>
+                    <table class="separate">
+                        <tr>
+                            <td><span class="sep">:</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="kfTable">
+                        <tr>
+                            <td><span class="kfs">000</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="kfs_ref">kf</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="separate">
+                        <tr>
+                            <td><span class="sep">:</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="millisecondsTable">
+                        <tr>
+                            <td><span class="milliseconds">000</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="milliseconds_ref">i</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
             </ul>
+            <div>
+                <label class="timeUnitString">EXTEND TIME-UNIT</label>
+            </div>
+        </div>
+    </div>
+    <div class="in2">
+        <div class="reg_countdown">
+            <ul>
+                <li>
+                    <table class="reg_hTable">
+                        <tr>
+                            <td><span class="reg_hours">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="reg_hours_ref">HR</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="reg_separate">
+                        <tr>
+                            <td><span class="reg_sep">:</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="reg_mTable">
+                        <tr>
+                            <td><span class="reg_minutes">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="reg_minutes_ref">MN</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="reg_separate">
+                        <tr>
+                            <td><span class="reg_sep">:</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="reg_scTable">
+                        <tr>
+                            <td><span class="reg_seconds">00</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="reg_seconds_ref">SC</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+            <div>
+                <label>EXTEND TIME-UNIT</label>
+            </div>
         </div>
     </div>
 </body>

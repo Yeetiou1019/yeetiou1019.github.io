@@ -1,6 +1,6 @@
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
    .in {
-      height: 900px;
+      height: 384px;
       display: -webkit-flex;
       display: flex;
       -webkit-align-items: center;
@@ -9,6 +9,18 @@
       justify-content: center;
       text-align: center;
       background-color: transparent;
+   }
+   .in2 {
+      height: 384px;
+      width: 100%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      text-align: center;
+      background-color: white;
    }
    ul {
       display: flex;
@@ -31,7 +43,19 @@
       background-color: transparent;
    }
    .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds, .sep {
-      font-size: 70px;
+      font-size: 72px;
+      opacity: 2;
+      transition: opacity 0s;
+      -webkit-transition: opacity 0s;
+      -ms-transition: opacity 0s;
+      -moz-transition: opacity 0s;
+      -o-transition: opacity 0s;
+      color: rgba(255, 255, 255);
+      /* text-shadow: 0px 0px 15px rgba(0, 0, 0),0px 0px 15px rgb(251, 251, 251); */
+   }
+   
+   .reg_hours, .reg_minutes, .reg_seconds, .reg_kfs, .reg_milliseconds, .reg_sep {
+      font-size: 72px;
       opacity: 1;
       transition: opacity 0s;
       -webkit-transition: opacity 0s;
@@ -39,20 +63,26 @@
       -moz-transition: opacity 0s;
       -o-transition: opacity 0s;
       color: rgba(255, 255, 255);
-      text-shadow: 0px 0px 15px rgba(0, 0, 0),0px 0px 15px rgb(251, 251, 251);
+      /* text-shadow: 0px 0px 15px rgba(0, 0, 0),0px 0px 15px rgb(251, 251, 251); */
    }
-   
+
    .xs_ref, .gps_ref, .hours_ref, .minutes_ref, .seconds_ref, .kfs_ref, .milliseconds_ref {
-      font-size: 20px;
-      text-shadow: 0px 0px 15px rgba(141, 138, 138, 1),0px 0px 15px rgba(141, 138, 138, 1);
-      color: lightgray;
+      font-size: 18px;
+      /* text-shadow: 0px 0px 15px rgba(141, 138, 138, 1),0px 0px 15px rgba(141, 138, 138, 1); */
+      color: #006666;
    }
+
+   .timeUnitString {
+      font-size: 18;
+      color: #000000;
+   }
+
    @font-face {
-      font-family: 'digital';
-      src: url('./digitaldreamfatnarrow.ttf');
+      font-family: 'Galvji';
+      src: url('./Galvji.ttc');
    }
    body {
-      font-family: 'digital';
+      font-family: 'Galvji';
       color: white;
       background-color: black;
       /* font-style: normal;
