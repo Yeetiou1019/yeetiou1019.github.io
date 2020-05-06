@@ -11,7 +11,7 @@
     <script type="text/javascript" src="./javascript/clock.js"></script>
 </head>
 
-<body>
+<body topmargin="0" leftmargin="0" marginheight="0" marginwidth="0">
     <div class="in">
         <div class="countdown">
             <ul>
@@ -143,7 +143,9 @@
                 </li>
             </ul>
             <div>
-                <label class="timeUnitString">EXTEND TIME-UNIT</label>
+                <br>
+                <br>
+                <label class="timeUnitString">EXTENDED TIME-UNIT</label>
             </div>
         </div>
     </div>
@@ -151,13 +153,27 @@
         <div class="reg_countdown">
             <ul>
                 <li>
+                    <table width="35px">
+                        <tr>
+                            <td></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="reg_dashTable1">
+                        <tr>
+                            <td><hr></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
                     <table class="reg_hTable">
                         <tr>
                             <td><span class="reg_hours">00</span></td>
                         </tr>
                         <tr>
                             <td>
-                                <p class="reg_hours_ref">HR</p>
+                                <p class="reg_hours_ref">hr</p>
                             </td>
                         </tr>
                     </table>
@@ -176,7 +192,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <p class="reg_minutes_ref">MN</p>
+                                <p class="reg_minutes_ref">min</p>
                             </td>
                         </tr>
                     </table>
@@ -195,14 +211,42 @@
                         </tr>
                         <tr>
                             <td>
-                                <p class="reg_seconds_ref">SC</p>
+                                <p class="reg_seconds_ref">sec</p>
                             </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="reg_separate">
+                        <tr>
+                            <td><span class="reg_sep">:</span></td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="reg_millisecondsTable">
+                        <tr>
+                            <td><span class="reg_milliseconds">000</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="reg_milliseconds_ref">cs</p>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>
+                    <table class="reg_dashTable2">
+                        <tr>
+                            <td><hr ></td>
                         </tr>
                     </table>
                 </li>
             </ul>
             <div>
-                <label>EXTEND TIME-UNIT</label>
+                <br>
+                <br>
+                <label class="regTimeUnitString">REGULAR TIME-UNIT</label>
             </div>
         </div>
     </div>

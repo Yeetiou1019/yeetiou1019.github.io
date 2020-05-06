@@ -1,6 +1,7 @@
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+@media only screen and (min-device-width:  800px) and (max-device-width: 1024px) {
    .in {
       height: 384px;
+      width: 100%;
       display: -webkit-flex;
       display: flex;
       -webkit-align-items: center;
@@ -20,7 +21,7 @@
       -webkit-justify-content: center;
       justify-content: center;
       text-align: center;
-      background-color: white;
+      background-color: #000000;
    }
    ul {
       display: flex;
@@ -34,47 +35,116 @@
       list-style: none;
       background-color: transparent;
    }
-   table {
-      width: 40px;
-   }
+
    table, th, td {
       border-collapse: collapse;
       /* border: 5px solid transparent; */
       background-color: transparent;
    }
-   .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds, .sep {
-      font-size: 72px;
+
+
+   .xTable, .gpTable, .hTable, .mTable,.scTable  {
+      width: 100px;
+   }
+   
+   .kfTable, .millisecondsTable {
+      width: 120px;
+   }
+
+   .separate {
+      width: 10px;
+   }
+
+   .reg_hTable, .reg_mTable, .reg_scTable {
+      width: 100px;
+   }
+
+   .reg_millisecondsTable {
+      width: 120px
+   }
+
+   .reg_separate {
+      width: 20px;
+   }
+
+   .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds {
+      font-size: 40pt;
       opacity: 2;
       transition: opacity 0s;
       -webkit-transition: opacity 0s;
       -ms-transition: opacity 0s;
       -moz-transition: opacity 0s;
       -o-transition: opacity 0s;
-      color: rgba(255, 255, 255);
+      color: #000000;
       /* text-shadow: 0px 0px 15px rgba(0, 0, 0),0px 0px 15px rgb(251, 251, 251); */
    }
    
-   .reg_hours, .reg_minutes, .reg_seconds, .reg_kfs, .reg_milliseconds, .reg_sep {
-      font-size: 72px;
+   .sep{
+      font-size: 30pt;
       opacity: 1;
       transition: opacity 0s;
       -webkit-transition: opacity 0s;
       -ms-transition: opacity 0s;
       -moz-transition: opacity 0s;
       -o-transition: opacity 0s;
-      color: rgba(255, 255, 255);
+      color: #000000;
+   }
+
+   .reg_hours, .reg_minutes, .reg_seconds, .reg_kfs, .reg_milliseconds {
+      font-size: 40pt;
+      opacity: 2;
+      transition: opacity 0s;
+      -webkit-transition: opacity 0s;
+      -ms-transition: opacity 0s;
+      -moz-transition: opacity 0s;
+      -o-transition: opacity 0s;
+      color: #FFFFFF;
       /* text-shadow: 0px 0px 15px rgba(0, 0, 0),0px 0px 15px rgb(251, 251, 251); */
    }
 
+   .reg_sep{
+      font-size: 30pt;
+      opacity: 1;
+      transition: opacity 0s;
+      -webkit-transition: opacity 0s;
+      -ms-transition: opacity 0s;
+      -moz-transition: opacity 0s;
+      -o-transition: opacity 0s;
+      color: #FFFFFF;
+   }
+
    .xs_ref, .gps_ref, .hours_ref, .minutes_ref, .seconds_ref, .kfs_ref, .milliseconds_ref {
-      font-size: 18px;
+      font-size: 14pt;
       /* text-shadow: 0px 0px 15px rgba(141, 138, 138, 1),0px 0px 15px rgba(141, 138, 138, 1); */
       color: #006666;
    }
 
+   .reg_hours_ref, .reg_minutes_ref, .reg_seconds_ref, .reg_milliseconds_ref {
+      font-size: 14pt;
+      /* text-shadow: 0px 0px 15px rgba(141, 138, 138, 1),0px 0px 15px rgba(141, 138, 138, 1); */
+      color: #54A7A8;
+   }
+
+   .reg_dashTable1{
+      width: 230px;
+      height: 50px;
+      text-align: center;
+   }
+
+   .reg_dashTable2{
+      width: 180px;
+      height: 50px;
+      text-align: center;
+   }
+
    .timeUnitString {
-      font-size: 18;
+      font-size: 14pt;
       color: #000000;
+   }
+
+   .regTimeUnitString {
+      font-size: 14pt;
+      color: #FFFFFF;
    }
 
    @font-face {
@@ -83,8 +153,171 @@
    }
    body {
       font-family: 'Galvji';
-      color: white;
-      background-color: black;
+      /* color: white; */
+      background-color: white;
+      /* font-style: normal;
+      font-weight: normal; */
+   }
+}
+
+@media only screen and (min-device-width: 300px) and (max-device-width: 769px) {
+   .in {
+      height: 512px;
+      width: 100%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #FFFFFF;
+   }
+   .in2 {
+      height: 512px;
+      width: 100%;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-align-items: center;
+      align-items: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      text-align: center;
+      background-color: #000000;
+   }
+   ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: center;
+      padding: 0;
+      background-color: transparent;
+   }
+   ul>li {
+      list-style: none;
+      background-color: transparent;
+   }
+
+   table, th, td {
+      border-collapse: collapse;
+      /* border: 5px solid transparent; */
+      background-color: transparent;
+   }
+
+
+   .xTable, .gpTable, .hTable, .mTable,.scTable  {
+      width: 85px;
+   }
+   
+   .kfTable, .millisecondsTable {
+      width: 120px;
+   }
+
+   .separate {
+      width: 10px;
+   }
+
+   .reg_hTable, .reg_mTable, .reg_scTable {
+      width: 100px;
+   }
+
+   .reg_millisecondsTable {
+      width: 120px
+   }
+
+   .reg_separate {
+      width: 20px;
+   }
+
+   .xs, .gps, .hours, .minutes, .seconds, .kfs, .milliseconds {
+      font-size: 40pt;
+      opacity: 2;
+      transition: opacity 0s;
+      -webkit-transition: opacity 0s;
+      -ms-transition: opacity 0s;
+      -moz-transition: opacity 0s;
+      -o-transition: opacity 0s;
+      color: #000000;
+      /* text-shadow: 0px 0px 15px rgba(0, 0, 0),0px 0px 15px rgb(251, 251, 251); */
+   }
+   
+   .sep{
+      font-size: 30pt;
+      opacity: 1;
+      transition: opacity 0s;
+      -webkit-transition: opacity 0s;
+      -ms-transition: opacity 0s;
+      -moz-transition: opacity 0s;
+      -o-transition: opacity 0s;
+      color: #000000;
+   }
+
+   .reg_hours, .reg_minutes, .reg_seconds, .reg_kfs, .reg_milliseconds {
+      font-size: 40pt;
+      opacity: 2;
+      transition: opacity 0s;
+      -webkit-transition: opacity 0s;
+      -ms-transition: opacity 0s;
+      -moz-transition: opacity 0s;
+      -o-transition: opacity 0s;
+      color: #FFFFFF;
+      /* text-shadow: 0px 0px 15px rgba(0, 0, 0),0px 0px 15px rgb(251, 251, 251); */
+   }
+
+   .reg_sep{
+      font-size: 30pt;
+      opacity: 1;
+      transition: opacity 0s;
+      -webkit-transition: opacity 0s;
+      -ms-transition: opacity 0s;
+      -moz-transition: opacity 0s;
+      -o-transition: opacity 0s;
+      color: #FFFFFF;
+   }
+
+   .xs_ref, .gps_ref, .hours_ref, .minutes_ref, .seconds_ref, .kfs_ref, .milliseconds_ref {
+      font-size: 14pt;
+      /* text-shadow: 0px 0px 15px rgba(141, 138, 138, 1),0px 0px 15px rgba(141, 138, 138, 1); */
+      color: #006666;
+   }
+
+   .reg_hours_ref, .reg_minutes_ref, .reg_seconds_ref, .reg_milliseconds_ref {
+      font-size: 14pt;
+      /* text-shadow: 0px 0px 15px rgba(141, 138, 138, 1),0px 0px 15px rgba(141, 138, 138, 1); */
+      color: #54A7A8;
+   }
+
+   .reg_dashTable1{
+      width: 100px;
+      height: 50px;
+      text-align: center;
+   }
+
+   .reg_dashTable2{
+      width: 90px;
+      height: 50px;
+      text-align: center;
+   }
+
+   .timeUnitString {
+      font-size: 14pt;
+      color: #000000;
+   }
+
+   .regTimeUnitString {
+      font-size: 14pt;
+      color: #FFFFFF;
+   }
+
+   @font-face {
+      font-family: 'Galvji';
+      src: url('./Galvji.ttc');
+   }
+   body {
+      font-family: 'Galvji';
+      /* color: white; */
+      height: 300px;
+      background-color: gainsboro;
       /* font-style: normal;
       font-weight: normal; */
    }
