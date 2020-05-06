@@ -1,6 +1,6 @@
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio: 2) {
    .in {
-      /* height: 50%; */
+      height: 384px; 
       width: 100%;
       display: -webkit-flex;
       display: flex;
@@ -13,7 +13,7 @@
    }
    .in2 {
       /* height: 50%; */
-      width: 100%;
+      width: 384px;
       display: -webkit-flex;
       display: flex;
       -webkit-align-items: center;
