@@ -152,7 +152,7 @@
       src: url('./Galvji.ttc');
    }
    body {
-      /* font-family: 'Galvji'; */
+      font-family: 'Galvji'; 
       /* color: white; */
       background-color: white;
       /* font-style: normal;
@@ -314,7 +314,7 @@
       src: url('./Galvji.ttc');
    }
    body {
-      /* font-family: 'Galvji'; */
+      font-family: 'Galvji';
       /* color: white; */
       /* height: 300px; */
       background-color: gainsboro;
